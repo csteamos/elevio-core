@@ -13,8 +13,8 @@ import { TopicDTO } from '../topic/topic.model';
 export interface WeakpointDTO extends BaseDTO {
   /** Unique identifier for the weak point */
   id: string;
-  /** Identifier for the user associated with the weak point */
-  userId: string;
+  /** Identifier for the student associated with the weak point */
+  studentId: string;
   /** Identifier for the topic related to the weak point */
   topicId: string;
   /** Topic details, null if not loaded */
