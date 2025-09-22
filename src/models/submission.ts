@@ -5,4 +5,8 @@ export interface SubmissionDTO extends BaseDTO {
   id: string;
   /** Identifier for the user who made the submission */
   userId: string;
+  /** Timestamp when the submission was made */
+  submittedAt: string;
+  /** Status of the submission (e.g., 'pending', 'submitted', 'corrected') */
+  status: 'pending' | 'submitted' | 'corrected';
 }
