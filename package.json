@@ -1,0 +1,48 @@
+{
+  "name": "elevio-core",
+  "version": "0.0.1",
+  "description": "The core implementation of Elevio. A system that tracks, analyzes and reports weak points for students in real-time.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "start": "node dist/index.js",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "type-check": "tsc --noEmit",
+    "format": "prettier --write src/**/*.ts",
+    "format:check": "prettier --check src/**/*.ts",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csteamos/elevio-core.git"
+  },
+  "keywords": [
+    "elevio",
+    "weak-point",
+    "detection",
+    "real-time",
+    "core"
+  ],
+  "author": "Ismail El Badawy (ismailelbadawyw@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/csteamos/elevio-core/issues"
+  },
+  "homepage": "https://github.com/csteamos/elevio-core#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.36.0",
+    "@types/node": "^24.5.2",
+    "@typescript-eslint/eslint-plugin": "^8.44.0",
+    "@typescript-eslint/parser": "^8.44.0",
+    "eslint": "^9.36.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "globals": "^16.4.0",
+    "prettier": "^3.6.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
