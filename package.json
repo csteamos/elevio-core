@@ -39,8 +39,7 @@
       "types": "./dist/weakpoints/index.d.ts",
       "import": "./dist/weakpoints/index.js",
       "require": "./dist/weakpoints/index.js"
-    },
-    "./package.json": "./package.json"
+    }
   },
   "scripts": {
     "build": "tsc",
@@ -51,7 +50,10 @@
     "type-check": "tsc --noEmit",
     "format": "prettier --write src/**/*.ts",
     "format:check": "prettier --check src/**/*.ts",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:ci": "jest --ci --coverage --watchAll=false"
   },
   "repository": {
     "type": "git",
@@ -72,6 +74,7 @@
   "homepage": "https://github.com/csteamos/elevio-core#readme",
   "devDependencies": {
     "@eslint/js": "^9.36.0",
+    "@types/jest": "^30.0.0",
     "@types/node": "^24.5.2",
     "@typescript-eslint/eslint-plugin": "^8.44.0",
     "@typescript-eslint/parser": "^8.44.0",
@@ -79,7 +82,9 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",
     "globals": "^16.4.0",
+    "jest": "^30.1.3",
     "prettier": "^3.6.2",
+    "ts-jest": "^29.4.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.2"
   }
