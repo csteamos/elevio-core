@@ -13,13 +13,13 @@ export interface TopicDTO extends BaseDTO {
   /** Description of the topic */
   description: string | undefined;
   /** ID of the parent topic, null if this is a root topic */
-  parentId: string | null;
+  parentId?: string | null;
   /** Array of child topics, null if no children are loaded */
-  children: TopicDTO[] | null;
+  children?: TopicDTO[] | null;
   /** Parent topic, null if this is a root topic or not loaded */
-  parent: TopicDTO | null;
+  parent?: TopicDTO | null;
   /** Array of topics this topic depends on (prerequisites), null if not loaded */
-  dependencies: TopicDTO[] | null;
+  dependencies?: TopicDTO[] | null;
   /** Array of topics that depend on this topic, null if not loaded */
-  dependents: TopicDTO[] | null;
+  dependents?: TopicDTO[] | null;
 }
